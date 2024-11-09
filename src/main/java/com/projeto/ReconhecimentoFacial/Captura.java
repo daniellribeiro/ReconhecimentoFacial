@@ -25,11 +25,10 @@ public class Captura {
         OpenCVFrameGrabber camera = new OpenCVFrameGrabber(1);
         camera.start();
         CanvasFrame cFrame;
-
         CascadeClassifier detectorFace = new CascadeClassifier("src/main/resources/haarcascade_frontalface_alt.xml");
         Frame frameCapturado = null;
         org.bytedeco.opencv.opencv_core.Mat imagemColorida = new org.bytedeco.opencv.opencv_core.Mat();
-        cFrame = new CanvasFrame("Preview");
+        cFrame = new CanvasFrame("Camera");
         int numeroAmostras = 100;
         int amostra = 1;
 
@@ -51,15 +50,12 @@ public class Captura {
                     System.out.println("Foto" + amostra + " capturada \n");
                     amostra++;
                 }
-                if (cFrame.isVisible()) {
-                    cFrame.showImage(converteMat.convert(imagemColorida));
-                }
-                if (!cFrame.isVisible() || amostra > numeroAmostras) {
-                    break;
-                }
             }
-
-
+            if (cFrame.isVisible()) {
+                cFrame.showImage(converteMat.convert(imagemColorida));
+            }else{
+                break;
+            }
         }
         cFrame.dispose();
         camera.stop();

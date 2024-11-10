@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 /src/fotos
+src/main/resources/classificadorEigenFaces.yml
+src/main/resources/classificadorFisherFaces.yml
+src/main/resources/classificadorLbph.yml
 
 ### STS ###
 .apt_generated
@@ -32,3 +35,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+.gitattributes
+.mvn/
+        

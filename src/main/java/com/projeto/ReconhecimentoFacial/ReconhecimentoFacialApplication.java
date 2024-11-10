@@ -17,6 +17,6 @@ public class ReconhecimentoFacialApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Captura.principal();
+		Treinamento.treinamento();
 	}
 }

@@ -12,7 +12,7 @@ import static org.bytedeco.opencv.global.opencv_imgproc.*;
 import static org.opencv.imgproc.Imgproc.COLOR_BGRA2GRAY;
 
 public class Captura {
-    public static void principal() throws FrameGrabber.Exception {
+    public static void captura() throws FrameGrabber.Exception {
 
         System.out.println("Digite seu id: ");
         Scanner cadastro = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class Captura {
         Frame frameCapturado = null;
         org.bytedeco.opencv.opencv_core.Mat imagemColorida = new org.bytedeco.opencv.opencv_core.Mat();
         cFrame = new CanvasFrame("Camera");
-        int numeroAmostras = 100;
+        int numeroAmostras = 1000;
         int amostra = 1;
 
         while (camera.grab() != null) {

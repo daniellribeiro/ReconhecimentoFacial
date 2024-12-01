@@ -4,6 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 /src/fotos
+/src/yalefaces
 src/main/resources/classificadorEigenFaces.yml
 src/main/resources/classificadorFisherFaces.yml
 src/main/resources/classificadorLbph.yml

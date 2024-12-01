@@ -8,6 +8,9 @@ target/
 src/main/resources/classificadorEigenFaces.yml
 src/main/resources/classificadorFisherFaces.yml
 src/main/resources/classificadorLbph.yml
+src/main/resources/classificadorEigenFacesYale.yml
+src/main/resources/classificadorFisherFacesYale.yml
+src/main/resources/classificadorLbphYale.yml
 
 ### STS ###
 .apt_generated
